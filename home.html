@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content=""width=device-width, initial-scale="1">
+        <meta name="author" content="Noah Miller">
+        <meta name="keywords" content="html, css, web, web development, seo">
+        <title>LinkWith</title>
+        <link rel="shortcut icon" href="./assets/image/Half-Moon-PNG-Pic.png" type="image/x-icon" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="./assets/style/home.css" media="all">
+        <script src="./assets/script/home.js" defer></script>
+     </head>    
+     <body>
+        <main>
+            <div class="row">
+                <header>
+                    <div class="container flex">
+                        <h1>LinkWith</h1>
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Messages</a></li>
+                                <li><a href="#">Notifications</a></li>
+                                <li><a href="#">Job Offers</a></li>
+                                <li><a href="#">Settings</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div class="column one container">
+                    <div>
+                        <img class="photo" src="./assets/image/skydive.jpg">
+                    </div>
+                    <div>
+                        <h4>Noah Miller</h4>
+                        <h5>Junior-Stack Software Developer</h5>
+                    </div>
+                    <div>
+                        <span class="link">
+                            <a target="_blank" href="https://www.linkedin.com/in/noah-miller-3880b8261/">
+                                <img src="./assets/image/linkedin.png">
+                            </a>
+                        </span>
+                        <span class="gh">
+                            <a target="_blank" href="https://github.com/NoahMiller4">
+                                <img src="./assets/image/github.png">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="tenor-gif-embed" data-postid="18657810" data-share-method="host" data-aspect-ratio="1.79775" data-width="100%"><a href="https://tenor.com/view/coding-gif-18657810">Coding GIF</a>from <a href="https://tenor.com/search/coding-gifs">Coding GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                </div>
+                <div class="column two container">
+                    <div class="area">
+                      <div class="field">
+                          <textarea rows="1" id="input" class="input" placeholder="What's new, Noah?"></textarea>
+                      </div>
+                          <span class="select">
+                              <i class="fa fa-camera"></i>
+                          </span>
+                          <input type="file" class="image" accept="image" onchange="selectFile(event)">
+                          <button class="post" onclick="getInfo()">Post</button>
+                          <p id="error"></p>
+                          <div class="center">
+                            <div class="out" id="out">
+                                <img id="display">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="area dif">
+                        <p>Hello World!, Today I went to the bakery and ordered
+                            12 doughnuts. By the time I got home the box was 
+                            empty! I wonder how that happened 😏 I suppose I will
+                            have to code extra to burn all the calories.
+                        </p>
+                    </div>
+                    <div class="area dif">
+                        <img class="mainPic" src="./assets/image/aus.jpg">
+                        <p class="move">
+                            7 years since I visited Australia! Would love to
+                            return soon!
+                        </p>
+                    </div>
+                </div>
+                <div class="column three container">
+                </div>
+            </div>
+            <footer>
+                <div class="container flex">
+                    <h1>Noah Miller &copy</h1>
+            </div>
+                <nav>
+                    <ul>
+                    
+                    </ul>
+                </nav>
+            </footer>
+        </main>
+     </body>
+</html>

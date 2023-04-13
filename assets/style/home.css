@@ -1,0 +1,329 @@
+@import url(./reset.css);
+
+/*----------- Container -------*/
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-red-hover: #ff2846;
+    --app-grey: #BEBEBE;
+    --app-white: #f1f1f1;
+} 
+ 
+/* -----------------------------------*/
+/* Container                          */
+/* -----------------------------------*/
+
+.container {
+    width: min(100% - 20px, 1080px);
+    margin-inline: auto;
+    resize: both;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #dcdcdc, #87ceeb);
+    min-height: 105vh;
+    overflow: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+/*-----------------------------------------------------*/
+/* Header                                              */
+/*-----------------------------------------------------*/
+
+header {
+    background-image: linear-gradient(to bottom right, #87ceeb, #dcdcdc);
+}
+  
+.flex {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+  
+h1 {
+    font-size: 32px;
+    line-height: 60px;
+    font-family: 'Rowdies', cursive; 
+}
+ 
+ul li {
+    justify-content: center;
+    display: inline-block;
+    line-height: 60px;
+}
+  
+ul li + li {
+    margin-left: 15px;
+}
+  
+nav ul li a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+  
+header nav ul li a:hover {
+    font-weight: 500;
+    color: #020202;
+}
+  
+.icon {
+    margin-top: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 60px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+/* -----------------------------------*/
+/* Input                              */
+/* -----------------------------------*/
+
+.area {
+  display: inline-block;
+  text-align: left;
+  margin: auto;
+  margin: 20px;
+  height: 200px;
+  border: 1px solid rgb(255 255 255 / 0.5);
+  background-color: rgb(0 0 0 / 0.3);
+  border-radius: 5px;
+}
+
+.dif {
+    background-color: #d3d2d2;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.mainPic {
+    border-radius: 8px;
+    width: 200px;
+    height: 160px;
+}
+
+
+.field {
+    height: 150px;
+}
+
+textarea {
+  flex-wrap: wrap;
+  resize: none;
+  outline: none;
+  text-align: left;
+  min-width: 600px;
+  max-width: 700px;
+  min-height: 150px;
+  padding-top: 10px;
+  margin-left: 10px;
+  background-color: rgb(255 255 255 / 0.0);
+  color: #000;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  line-height: 38px;
+}
+
+textarea::placeholder {
+    color: #383838;
+}
+
+input[type=file] {
+    display: none;
+    padding: 10px;
+}
+
+span {
+    margin-left: 20px;
+    height: 50px;
+    min-width: 500px;
+    max-width: 500px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+span, button {
+    display: inline-block;
+}
+
+button {
+    position: relative;
+    bottom: 60px;
+    left: 500px;
+    text-align: center;
+    margin-right: 10px;
+    width: 100px;
+    height: 38px;
+    background-color: var(--app-blue);
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--app-blue-hover);
+}
+
+input+input {
+  margin-left: 10px;
+}
+
+p {
+    color: #000;
+    font-size: 18px;
+}
+
+/* -----------------------------------*/
+/* Column                             */
+/* -----------------------------------*/
+
+h4, h5 {
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+    left: 270px;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33%;
+}
+
+div .one {
+    margin-left: 200px;
+}
+
+.one, .three {
+    margin: 40px 10px 5px 40px;
+    min-height: 80vh;
+    max-width: 380px;
+    background-color: #d3d2d2;
+    border-radius: 8px;
+    box-shadow: 1px 1px #6d6d6d;
+}
+
+.three {
+    padding-bottom: 75px;
+}
+
+img {
+    float: left;
+    position: relative;
+    left: 10px;
+    border-radius: 50%;
+}
+
+.column li {
+    list-style: none;
+    border-bottom: 1px solid #000;
+}
+
+.well {
+    display: flex;
+    padding: 5px;
+}
+
+.well span {
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    
+}
+
+.well span + span {
+    position: relative;
+    top: 20px;
+    right: 500px;
+    
+}
+
+.one div + div {
+    position: relative;
+    top: 200px;
+    right: 230px;
+}
+
+.one div + div + div {
+    display: inline-block;
+    top: 80px;
+    left: 1px;
+}
+
+
+.photo {
+    border-radius: 10px;
+    margin: 20px;
+    left: 40px;
+}
+
+.move {
+    position: relative;
+    left: 20px;
+}
+
+.add {
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.link {
+    position: relative;
+    left: 200px;
+}
+
+.gh {
+    position: relative;
+    left: 25px;
+    bottom: 75px;
+}
+
+
+
+/* -----------------------------------*/
+/* Footer                             */
+/* -----------------------------------*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    min-width: 100%;
+    height: 5rem;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .flex{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
